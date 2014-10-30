@@ -13,13 +13,15 @@
 
 ##Overview
 
-A one-maybe-two sentence summary of what the module does/what problem it solves. This is your 30 second elevator pitch for your module. Consider including OS/Puppet version it works with.       
+Installs a Tomcat Webserver.  You can use it if you want...
 
 ##Module Description
 
-If applicable, this section should have a brief description of the technology the module integrates with and what that integration enables. This section should answer the questions: "What does this module *do*?" and "Why would I use it?"
+ "What does this module *do*?"
+   Installs, configures and manages Apache Tomcat
 
-If your module has a range of functionality (installation, configuration, management, etc.) this is the time to mention it.
+ "Why would I use it?"
+   Well quite frankly I don't care if you use it or not, I have not egotistical requirements for your usage.
 
 ##Setup
 
@@ -29,15 +31,13 @@ If your module has a range of functionality (installation, configuration, manage
 * This is a great place to stick any warnings.
 * Can be in list or paragraph form. 
 
-###Setup Requirements **OPTIONAL**
+###Setup Requirements
 
-If your module requires anything extra before setting up (pluginsync enabled, etc.), mention it here. 
+  Currently can be used with hiera or without, so long as variables are passed in correctly.
 
 ###Beginning with tomcat
 
-The very basic steps needed for a user to get the module up and running. 
-
-If your most recent release breaks compatibility or requires particular steps for upgrading, you may wish to include an additional section here: Upgrading (For an example, see http://forge.puppetlabs.com/puppetlabs/firewall).
+  include tomcat
 
 ##Usage
 
@@ -49,12 +49,8 @@ Here, list the classes, types, providers, facts, etc contained in your module. T
 
 ##Limitations
 
-This is where you list OS compatibility, version compatibility, etc.
+Currently only tested with Ubuntu
 
 ##Development
 
-Since your module is awesome, other users will want to play with it. Let them know what the ground rules for contributing are.
-
-##Release Notes/Contributors/Etc **Optional**
-
-If you aren't using changelog, put your release notes here (though you should consider using changelog). You may also add any additional sections you feel are necessary or important to include here. Please use the `## ` header. 
+Contribute if you like
