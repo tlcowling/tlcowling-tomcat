@@ -1,0 +1,16 @@
+{
+  "name": "tlcowling-tomcat",
+  "version": "0.1.0",
+  "author": "Tom Cowling <tom.cowling@gmail.com>",
+  "summary": "Puppet module to install and configure Apache Tomcat",
+  "license": "MIT",
+  "source": "https://github.com/tlcowling/tlcowling-tomcat.git",
+  "project_page": "https://github.com/tlcowling/tlcowling-tomcat",
+  "issues_url": "https://github.com/tlcowling/tlcowling-tomcat/issues",
+  "dependencies": [
+    {
+      "name": "puppetlabs-stdlib",
+      "version_requirement": ">= 1.0.0"
+    }
+  ]
+}
