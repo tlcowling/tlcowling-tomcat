@@ -4,8 +4,14 @@
 # created by tomcat-packager
 #
 # === Parameters
-#  [*remove_default_page*]
-#    Removes the default Tomcat installation page, defaults to false
+#  [*package_name*]
+#    Specify the package name for Tomcat
+#
+#  [*package_version*]
+#    The version of Tomcat that you want to install:w
+#
+#  [*service_name*]
+#    The name of the Tomcat service
 #
 # === Examples
 #
