@@ -4,5 +4,4 @@
 #
 #  Tom Cowling <tom.cowling@gmail.com>
 #
-class tomcat::config {
-}
+class tomcat::config { }

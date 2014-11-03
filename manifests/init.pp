@@ -26,6 +26,9 @@ class tomcat (
   validate_string($version)
   validate_re($::osfamily, '^(Debian|Ubuntu)$', 'Whilst it is intended to make this module work for Red Hat based systems, it currently is tested only with Debian and Ubuntu based systems.')
 
+  ensure_resource('group', ['tomcat'], { 'ensure' => 'present' })
+  ensure_resource('user', ['tomcat'], { 'ensure' => 'present' })
+
   class { 'tomcat::install': } ->
   class { 'tomcat::config': } ~>
   class { 'tomcat::service': } ->
