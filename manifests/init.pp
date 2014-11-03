@@ -29,5 +29,5 @@ class tomcat (
   class { 'tomcat::install': } ->
   class { 'tomcat::config': } ~>
   class { 'tomcat::service': } ->
-  Class['tomcat']
+  Class ['tomcat']
 }

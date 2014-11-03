@@ -3,18 +3,16 @@
 # Default parameter values for the Tomcat Module
 #
 class tomcat::params (
-  $package_name     = 'tomcat',
-  $service_name     = 'tomcat',
   $package_version  = '7'
 ) {
   case $::osfamily {
     'Debian': {
       $package_name = 'tomcat'
-      $service_name = 'tomcat'
+      $service_name = "tomcat${package_version}"
     }
     'Ubuntu': {
       $package_name = 'tomcat'
-      $service_name = 'tomcat'
+      $service_name = 'tomcat${package_version}'
     }
     default: {
       fail("${::operatingsystem} not supported")
