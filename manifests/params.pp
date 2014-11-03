@@ -20,4 +20,9 @@ class tomcat::params (
       fail("${::operatingsystem} not supported")
     }
   }
+
+  $prerequired_packages = $::operatingsystem ? {
+    'Ubuntu' => [ 'oracle-java7-installer' ],
+    default  => '',
+  }
 }
