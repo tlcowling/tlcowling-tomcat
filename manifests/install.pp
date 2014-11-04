@@ -6,7 +6,7 @@ class tomcat::install {
   }
   file { 'Tomcat Upstart':
     ensure  => file,
-    path    => '/etc/init/tomcat.conf'
+    path    => '/etc/init/tomcat.conf',
     mode    => '0644',
     owner   => 'root',
     group   => 'root',
